@@ -24,16 +24,16 @@ body{
 
 /* header */
 
-.header{
+.headgradient{
     font-family: 'Exo';
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
     border-radius: 30px;
-    border: 2px solid #05FA3B; /* fallback solid border */
+     /* fallback solid border */
     width: 1100px;
-    padding: 0;
-    background-color: #290250;
+    padding: 2px;
+    
     position: fixed;
     top: 5%;
     left: 50%;
@@ -41,7 +41,17 @@ body{
     -webkit-box-shadow: 0 3px 10px -6px black;
        -moz-box-shadow: 0 3px 10px -6px black;
             box-shadow: 0 3px 10px -6px black;
-    z-index: 2;
+     background-color: #20bf55;
+    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    z-index: 4;     
+}
+
+.header{
+    background-color: #290250;
+    z-index: 4;
+    opacity: 1;
+    width: 1098px;
+    border-radius: 30px;
 }
 
 
@@ -134,18 +144,33 @@ body{
     font-size: 18px;
     color: #fff;
     font-weight: bold;
-    text-decoration: none;
+   
     margin-top: 20px;
+}
+
+.home-buttons a{
+    text-decoration: none;
+    margin: 0;
+}
+
+.home-buttons a div{
+    background-color: #01baef;
+    border-top-left-radius: 0;
+    border-radius: 8px;
+    background-color: #f06543;  
+    background-image: linear-gradient(315deg, #f06543 0%, #ffbe3d 74%);
 }
 
 .home-buttons a p{
     background-color: #290250;
     padding: 10px;
+    color: #fff;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 8px;
     border-top-left-radius: 0;
     border: 1px solid #FFCC00;
+    margin: 2px;
 }
 
        
@@ -154,7 +179,7 @@ body{
 
 
 #road{
-    background-image: url('../img/line.png'), url('../img/bg1-main.png'),  url('../img/bg2.png');
+    background-image: url('../img/line.png'), url('../img/bg1-main.png'),  url('../img/bg2.');
     height: 90vh;
     background-repeat: no-repeat;
     background-position:  center center, left 100px, center center;
@@ -172,12 +197,19 @@ body{
 #about{
     padding-left: 80px;
     padding-right: 80px;
-    padding-top: 10px;
-
     background-image:  url('../img/bg3-main.png'), url('../img/bg3.png');
     background-size:auto, cover;
     background-repeat: no-repeat;
     background-position: right 280px, center center;
+    margin-top: -10px;
+    margin-bottom: -25px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+   
+}
+
+.legacy-title-another{
+    display: none;
 }
 
 .about-top{
@@ -193,6 +225,10 @@ body{
     font-size: 18px;
     color: #fff;
     padding-top: 30px;
+}
+
+.about-para span{
+    font-weight: bold;
 }
 
 .about-more-btn{
@@ -219,6 +255,9 @@ body{
     background-position: left 100px, center;
     padding-left: 40px;
     padding-right: 40px;
+    margin-bottom: -25px;
+    padding-bottom: 40px;
+    scroll-margin-top: 120px;
    
 }
 
@@ -240,7 +279,8 @@ body{
 }
 
 .legacy-para{
-    font-size: 17px;
+    font-size: 20px;
+    
 }
 
 .hacktly-img{
@@ -258,7 +298,7 @@ body{
 #theme{
     background-image: url('../img/bg5.png');
     padding-bottom: 50px;
-    
+    scroll-margin-top: 90px;
     
 }
 
@@ -337,6 +377,7 @@ body{
 #price{
     background-image: url('../img/b6-main.png'), url('../img/bg6.png');
     background-repeat: no-repeat;
+    background-size: auto, cover;
     background-position: left center, center center;
     background-size: 200px, 100%;
     display: flex;
@@ -379,6 +420,7 @@ display: block;
     background-repeat: no-repeat;   
     padding-left: 50px;
     padding-right: 50px;
+    scroll-margin-top: 90px;
 }
 
 .partimg{
@@ -398,3 +440,425 @@ display: block;
 .partner-img{
     padding: 20px;
 }
+
+
+/* mpartner */
+
+
+#mpartner{
+    padding: 80px;
+    
+}
+
+.partnerimgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mpara{
+    text-align: center;
+    font-weight: bold;
+    color: #fff ;
+    font-size: 30px;
+}
+
+.mimg{
+    padding: 20px;
+}
+
+
+
+/* footer */
+
+
+#footer{
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    background-color: #290250;
+   
+}
+
+.f1-para{
+    width: 350px;
+    color: #fff;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.f2title{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.f2para{
+    font-size: 15px;
+    color: #fff;
+}
+
+.f2 a{
+    text-decoration: none;
+}
+
+/* bottom */
+
+.bottom{
+    background-color: #01DC82;
+    display: flex;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+}
+
+.bottom a{
+    text-decoration: none;
+}
+
+.bottompara{
+    font-size: 18px;
+}
+
+.imiot{
+    color: #fff;
+    font-size: 18px;
+}
+
+.imiot span{
+    color: #6100FF;
+    font-weight: bold;
+    
+}
+
+.titles-prize{
+    padding-top: 20px;
+}
+
+
+/* media query */
+
+@media screen and (max-width: 1180px){
+
+    /* header */
+
+    .headgradient{
+    width: 700px;
+            
+}
+    .header{
+       
+        width: 700px;
+       
+    }
+
+    .link{
+
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: 500;
+    }
+
+    /* home */
+    
+    .titles{
+        width: 40%;
+    }
+
+    .partner-img{
+        width: 20%;
+        height: 10%;
+    }
+
+    .secbtm{
+        width: 90%;
+    }
+    .secndcrown{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 750px){
+    /* header  */
+
+    .hidden{
+        display: none;
+    }
+
+    .headgradient{
+        width: 350px;
+                
+    }
+
+    .header{
+       
+        width: 350px;
+       
+    }
+
+    .link{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 10px;
+       
+    }
+
+    .link .link-name span{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+    /* home */
+
+
+    .home-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 220px;
+        text-align: center;
+    }
+
+
+    .home-container{
+        width: auto;
+    }
+
+    #home{
+        background-size: 180px, cover;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: auto;
+    }
+
+    .home-date{
+        font-size: 20px;
+        padding: 5px;
+        padding-left:70px;
+        padding-right: 70px;
+
+       
+    }
+
+    .home-title{
+        padding-top: 120px;
+        font-size: 15px;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .home-heading{
+        font-size: 20px;
+    }
+
+    .home-hacktly{
+        width: 80%;
+        margin: auto;
+        display: block;
+    }
+
+    .home-buttons{
+    
+        font-size: 12px;
+       justify-content: flex-end;
+        margin-top: 100px;
+        margin-left: 25%;
+    }
+
+    .home-buttons a div{
+       margin: 10px;
+    }
+    
+
+
+    .home-buttons a p{
+        background-color: #290250;
+        padding: 10px;
+        color: #fff;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 8px;
+        border-top-left-radius: 0;
+        border: 1px solid #FFCC00;
+    }
+
+
+    /* price */
+
+    #price{
+        background-image: url('../img/b6-main.png'), url('../img/bg6.png');
+        background-repeat: no-repeat;
+        background-size: auto, cover;
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+    /* road */
+
+
+        #road{
+            background-image: url('../img/line2.png'), url('../img/bgs.png'),  url('../img/bg2.png');
+            background-position:  center center, center, right right;
+            background-size: auto, contain, cover;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        #road img{
+            width: 100px;
+        }
+
+
+        /* about us */
+
+        .about-top{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    .about-bottom{
+        text-align: center;
+    }
+
+    .titles{
+        padding: 10px;
+    }
+
+    .iedc-about{
+        width: 100px;
+    }
+
+    /* our legacy */
+
+    .legacy-title{
+        display: none;
+    }
+
+    .about-para{
+        text-align: center;
+    }
+    
+    .legacy-title-another{
+        display: block;
+        padding-top: 40px;
+        margin: auto;
+    }
+
+    .hacktly-img{
+        margin: auto;
+        display: block;
+        padding-top: 40px;
+    }
+
+    /* theme */
+
+    .theme-title{
+        padding-bottom: 100px;
+    }
+
+    /* partner */
+
+    #partner{
+        padding-left: 8px;
+        padding-right: 8px;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .partner-img{
+        padding: 10px;
+    }
+
+
+    /* mpartner */
+
+
+        #mpartner{
+            padding: 20px;
+        }  
+
+    /* footer */
+
+    #footer{
+        display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       
+    }
+
+    #about{
+        padding-left: 30px;
+        padding-right: 30px;}
+
+
+        .bottom{
+            justify-content: space-around;
+            padding-left: 10px;
+            padding-right: 10px;
+            
+        }
+        
+        .bottompara{
+            font-size: 10px;
+        }
+
+        .imiot{
+           
+            font-size: 10px;
+        }
+
+
+    }        
+
+
+
+    
+    p{
+        animation: 2s anim-lineUp ease-out ;
+      }
+    
+    img{
+        transform: scale(0.94);
+        animation: scale 10s forwards cubic-bezier(0.5, 1, 0.89, 1) ;
+    }
+    
+    
+    @keyframes scale {
+        100% {
+            transform: scale(1);
+          }
+      }
+    
+    
+    @keyframes anim-lineUp {
+        0% {
+          opacity: 0;
+          transform: translateY(80%);
+        }
+        20% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+      }
+    
+    
+     .footer-text span a{
+        text-decoration: none;
+        color: none;
+      }git reset --soft HEAD~1
