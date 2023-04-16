@@ -143,4 +143,19 @@ body{
     border: 1px solid #FFCC00;
 }
 
-        /*media query of home  */
+       
+
+/* our legacy */
+
+
+#legacy{
+    background-image: url('../img/line.png'), url('../img/bg1-main.png'),  url('../img/bg2.png');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position:  center center, left top, center center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
