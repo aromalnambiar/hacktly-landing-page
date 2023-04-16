@@ -4,6 +4,11 @@
    
   }
 
+  @font-face {
+    font-family: 'Keania One', cursive;
+   
+  }
+
 
 
 html{
@@ -145,17 +150,251 @@ body{
 
        
 
-/* our legacy */
+/* road */
 
 
-#legacy{
+#road{
     background-image: url('../img/line.png'), url('../img/bg1-main.png'),  url('../img/bg2.png');
     height: 90vh;
     background-repeat: no-repeat;
-    background-position:  center center, left top, center center;
+    background-position:  center center, left 100px, center center;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+
+/* about us */
+
+
+#about{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+
+    background-image:  url('../img/bg3-main.png'), url('../img/bg3.png');
+    background-size:auto, cover;
+    background-repeat: no-repeat;
+    background-position: right 280px, center center;
+}
+
+.about-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-bottom{
+ 
+}
+
+.about-para{
+    font-size: 18px;
+    color: #fff;
+    padding-top: 30px;
+}
+
+.about-more-btn{
+    background-color: #290250;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+/* our legacy */
+
+
+#legacy{
+    background-image: url('../img/bg4-main.png'), url('../img/bg4.png');
+    background-repeat: no-repeat;
+    background-size:auto, cover;
+    background-position: left 100px, center;
+    padding-left: 40px;
+    padding-right: 40px;
+   
+}
+
+.legacy-container{
+    display: flex;
+    
+}
+
+.legacy-sub-container{
+    margin-top: 0;
+    padding-bottom: 30px;
+}
+
+.legacy-title{
+    width: 50%;
+    height: 50%;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+
+.legacy-para{
+    font-size: 17px;
+}
+
+.hacktly-img{
+    width: 60%;
+}
+
+.legacy-btn{
+    width: 300px;
+    margin-top: 10px;
+}
+
+
+/* theme */
+
+#theme{
+    background-image: url('../img/bg5.png');
+    padding-bottom: 50px;
+    
+    
+}
+
+.theme-title{
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 0;
+}
+
+.theme-container{
+    display: flex;
+    padding-left:30px;
+    padding-right: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.themes{
+    width: 200px;
+    border: 3px solid #fff;
+    border-top-right-radius: 200px;
+    background-color: #20033D;
+    padding: 30px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+    
+}
+
+.themes-number{
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    z-index: 2;
+    margin-top: -50px;
+    text-align: center;
+    width: 100px;
+    font-weight: bold;
+    margin-left: 10;
+    background-color: #20033D;
+    color: #fff;
+}
+
+.theme-titles{
+    margin-top: 40px;
+    color: #fff;
+    font-family: 'Keania One';
+    font-size: 25px;
+    padding-bottom: 0;
+}
+
+.theme-des{
+    font-size: 15px;
+    color: #fff;
+    opacity: .8;
+    padding-bottom: 50px;
+}
+
+.theme-link{
+    color: #01DC82;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+
+
+/* price */
+
+
+#price{
+    background-image: url('../img/b6-main.png'), url('../img/bg6.png');
+    background-repeat: no-repeat;
+    background-position: left center, center center;
+    background-size: 200px, 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.price-img{
+    margin: auto;
+    display: block;
+}
+
+.top{
+    display: flex;
+}
+
+.other-price{
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.secndcrown{
+margin: auto;
+display: block;
+}
+
+.second{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* partnter */
+
+#partner{
+    background-image: url('../img/b7-main.png'), url('../img/b7.png');
+    background-position: right center, center center;
+    background-repeat: no-repeat;   
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.partimg{
+    margin: auto;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.partner-imgs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.partner-img{
+    padding: 20px;
 }
