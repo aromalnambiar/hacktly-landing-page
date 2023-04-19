@@ -792,6 +792,7 @@ display: block;
         display: flex;
        flex-direction: column;
        flex-wrap: wrap;
+       padding: 10px;
        
     }
 
@@ -816,6 +817,12 @@ display: block;
             font-size: 10px;
         }
 
+
+        .f1-para{
+
+            font-size: 15px;
+
+        }
 
     }        
 
