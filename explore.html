@@ -8,6 +8,8 @@
 
     <!-- custom style -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/content.css">
+    <link rel="stylesheet" href="assets/css/expore.css">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,11 +22,11 @@
         <div class="header">
             <div class="links">
                 <a href="#home" class="link "><p class="link-name">Home</p></a>
-                <a href="#legacy" class="link "><p class="link-name">Our Legacy</p></a>
-                <a href="#partner" class="link "><p class="link-name">Our Partner</p></a>
-                <a href="#theme" class="link hidden"><p class="link-name">Themes</p></a>
-                <a href="#footer" class="link hidden"><p class="link-name">Contact us</p></a>
-                <a href="#footer" class="link"><p class="link-name"><span>
+                <a href="index.html#legacy" class="link "><p class="link-name">Our Legacy</p></a>
+                <a href="index.html#partner" class="link "><p class="link-name">Our Partner</p></a>
+                <a href="index.html#theme" class="link hidden"><p class="link-name">Themes</p></a>
+                <a href="index.html#footer" class="link hidden"><p class="link-name">Contact us</p></a>
+                <a href="index.html#footer" class="link"><p class="link-name"><span>
                     Register Now
                 </span> </p></a>
             </div>
@@ -43,40 +45,122 @@
             <img src="./assets/img/HACKLTY TITLE.png" alt="img"  class="home-hacktly"/>
             <p class="home-heading">Organizing by IEDC CE-Thalassery</p>
             <p class="home-date">MAY 04 & 05</p>
-            <div class="home-buttons">
-                <a href="#" class="home-button">
-                    <div>
-                        <p>
-                            REGISTER NOW
-                        </p>
-                    </div>
-                   
-                </a>
-    
-                <a href="#" class="home-button">
-                    <div>
-                        <p>
-                            Explore HACKATLY
-                        </p>
-                    </div>
-                    
-                </a>
-    
-                <a href="#" class="home-button">
-                    <div>
-                        <p>
-                            Be a SPONSOR
-                        </p>
-                    </div>
-                    
-                </a>
-            </div>
         </div>
        
     </div>
 
 
-  
+  <!-- explore -->
+
+    <div class="explore">
+
+        <div class="explore-one">
+
+            <div class="exp-one-top">
+                <img src="./assets/img/our-legacy-explore.png" alt="img" class="exp-one-img"/>
+                <img src="./assets/img/hacktly-explore.png" alt="img" class="exp-one-img"/>
+            </div>
+
+            <p class="exp-one-para">
+                                Summary of the HACKATLY event happened in 2022
+                the content should contain more than 60 words. with relevant pictures including media cuttings.
+                Summary of the HACKATLY event happened in 2022
+                the content should contain more than 60 words. with relevant pictures including media cuttings.
+                Summary of the HACKATLY event happened in 2022
+                the content should contain more than 60 words. with relevant pictures including media cuttings.
+                Summary of the HACKATLY event happened in 2022
+                the content should contain more than 60 words. with relevant pictures including media cuttings.
+            </p>
+
+        </div>
+
+        <div class="explore-two">
+
+            <img src="./assets/img/badge4.png" alt="img" class="explore-label">
+
+            <div class="explore-two-imgs">
+
+                <img src="./assets/img/img1exp.png" alt="img">
+                <img src="./assets/img/img2exp.png" alt="img">
+                <img src="./assets/img/img3exp.png" alt="img">
+                <img src="./assets/img/img3exp.png" alt="img">
+
+            </div>
+
+            <a href="#" class="exp-view-more">
+                <p>
+                    view more...!
+                </p>
+            </a>
+        </div>
+
+        <!-- media partner -->
+
+     <div id="mpartner">
+        <p class="mpara">Featured in</p>
+        <div class="partnerimgs">
+            <img src="./assets/img/m1.png" alt="img" class="mimg">
+            <img src="./assets/img/m2.png" alt="img" class="mimg">
+            <img src="./assets/img/m3.png" alt="img" class="mimg">
+            <img src="./assets/img/m4.png" alt="img" class="mimg">
+            <img src="./assets/img/m5.png" alt="img" class="mimg">
+        </div>
+       
+    </div>
+
+
+    <!-- gallery -->
+
+    <div class="gallery">
+        <div id="our_team">
+            <div class="our_team_container">
+                <img src="./assets/img/gallerybtn.png" alt="img" class="galleryimg">
+            
+            <div class="scroll-container">
+                <ul class="team_list">
+                    <li class="team_inlist">
+                        <img src="./assets/img/img4exp.png" alt="img" class="team_img">
+                        
+                    </li>
+
+                    <li class="team_inlist">
+                        <img src="./assets/img/img4exp.png" alt="img" class="team_img">
+                        
+                    </li>
+
+                    <li class="team_inlist">
+                        <img src="./assets/img/img4exp.png" alt="img" class="team_img">
+                        
+                    </li>
+
+                    <li class="team_inlist">
+                        <img src="./assets/img/img4exp.png" alt="img" class="team_img">
+                        
+                    </li>
+
+                    <li class="team_inlist">
+                        <img src="./assets/img/img4exp.png" alt="img" class="team_img">
+                        
+                    </li>
+
+                    <li class="team_inlist">
+                        <img src="./assets/img/img4exp.png" alt="img" class="team_img">
+                        
+                    </li>
+
+                    
+                   
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+
+       
+    </div>
+
+
+     
 
 
     <!-- footer -->
@@ -179,6 +263,41 @@
 
         
     </div>
+
+
+    <script>
+
+        const slider = document.querySelector('.team_list');
+      
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.classList.add('active');
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+        slider.addEventListener('mousemove', (e) => {
+            if(!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 3; //scroll-fast
+            slider.scrollLeft = scrollLeft - walk;
+            console.log(walk);
+        });
+
+
+    </script>
 
 </body>
 </html>

@@ -1,3 +1,9 @@
+body{
+    
+    background: linear-gradient(116.96deg, rgba(41, 2, 80, 0.9) 0%, rgba(79, 2, 140, 0.9) 100%);
+
+}
+
 img {
     align-self: center;
 }
@@ -7,8 +13,12 @@ img {
 
 /* first content */
 
+.content{
+    background: linear-gradient(116.96deg, rgba(41, 2, 80, 0.9) 0%, rgba(79, 2, 140, 0.9) 100%);
+}
+
 .first-content{
-    margin-top: 80px;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,13 +138,7 @@ li p {
 
 @media screen and (max-width : 750px){
 
-    .first-content{
-        margin-top: 80px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
+ 
     
     
     .content-title{
