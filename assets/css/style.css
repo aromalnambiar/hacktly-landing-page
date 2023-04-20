@@ -535,6 +535,18 @@ display: block;
     text-decoration: none;
 }
 
+.flogo{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.iedc-logo{
+
+    width: 150px;
+
+}
 /* bottom */
 
 .bottom{
@@ -569,6 +581,10 @@ display: block;
     padding-top: 20px;
 }
 
+.agi{
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
 
 /* media query */
 
