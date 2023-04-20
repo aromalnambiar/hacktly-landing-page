@@ -92,7 +92,7 @@ body{
 
 #home{
     height: 100vh;
-    background-image: url('../img/main-bg.png'), url('../img/bg1.png');
+    background-image: url('../img/main-bg-gif-left.gif'), url('../img/bg1.png');
     background-repeat: no-repeat;
     background-position: right, center;
     padding-left: 100px;
@@ -179,7 +179,7 @@ body{
 
 
 #road{
-    background-image: url('../img/line.png'), url('../img/bg1-main.png'),  url('../img/bg2.');
+    background-image: url('../img/line.png'), url('../img/main-bg-gif-right.gif'),  url('../img/bg2.png');
     height: 90vh;
     background-repeat: no-repeat;
     background-position:  center center, left 100px, center center;
@@ -197,10 +197,10 @@ body{
 #about{
     padding-left: 80px;
     padding-right: 80px;
-    background-image:  url('../img/bg3-main.png'), url('../img/bg3.png');
+    background-image:  url('../img/main-bg-gif-left.gif'), url('../img/bg3.png');
     background-size:auto, cover;
     background-repeat: no-repeat;
-    background-position: right 280px, center center;
+    background-position: right 200px, center center;
     margin-top: -10px;
     margin-bottom: -25px;
     padding-bottom: 100px;
@@ -249,10 +249,10 @@ body{
 
 
 #legacy{
-    background-image: url('../img/bg4-main.png'), url('../img/bg4.png');
+    background-image: url('../img/main-bg-gif-right.gif'), url('../img/bg4.png');
     background-repeat: no-repeat;
     background-size:auto, cover;
-    background-position: left 100px, center;
+    background-position: left 50px, center;
     padding-left: 40px;
     padding-right: 40px;
     margin-bottom: -25px;
@@ -375,7 +375,7 @@ body{
 
 
 #price{
-    background-image: url('../img/b6-main.png'), url('../img/bg6.png');
+    background-image: url('../img/main-bg-gif-right.gif'), url('../img/bg6.png');
     background-repeat: no-repeat;
     background-size: auto, cover;
     background-position: left center, center center;
@@ -430,7 +430,7 @@ display: block;
 /* partnter */
 
 #partner{
-    background-image: url('../img/b7-main.png'), url('../img/b7.png');
+    background-image: url('../img/main-bg-gif-left.gif'), url('../img/b7.png');
     background-position: right center, center center;
     background-size: auto, cover;
     background-repeat: no-repeat;   
@@ -456,8 +456,8 @@ display: block;
   
 
 .partimg{
-    margin: auto;
-    display: block;
+    display: flex;
+    justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -600,9 +600,13 @@ display: block;
         width: 40%;
     }
 
+    #partner{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .partner-img{
-        width: 20%;
-        height: 10%;
+       width: 40%;
     }
 
     .secbtm{
@@ -726,7 +730,7 @@ display: block;
     #price{
         background-image: url('../img/b6-main.png'), url('../img/bg6.png');
         background-repeat: no-repeat;
-        background-size: auto, cover;
+        background-size: 100px, cover;
         padding-bottom: 20px;
         padding-top: 10px;
     }
@@ -765,6 +769,15 @@ display: block;
 
         /* about us */
 
+
+        #about{
+
+            background-image:  url('../img/main-bg-gif-left.gif'), url('../img/bg3.png');
+            background-size: 200px, cover;
+            background-position: right bottom, center center;
+
+        }
+
         .about-top{
             flex-direction: column;
             justify-content: center;
@@ -784,6 +797,13 @@ display: block;
     }
 
     /* our legacy */
+
+    #legacy{
+        background-image: url('../img/main-bg-gif-right.gif'), url('../img/bg4.png');
+        background-repeat: no-repeat;
+        background-size: 200px, cover;
+        background-position: left bottom, center;
+    }
 
     .legacy-title{
         display: none;
@@ -814,6 +834,11 @@ display: block;
     /* partner */
 
     #partner{
+
+        background-image: url('../img/main-bg-gif-left.gif'), url('../img/b7.png');
+        background-position: right bottom, center center;
+        background-size: 200px, cover;
+        background-repeat: no-repeat;   
         padding-left: 8px;
         padding-right: 8px;
 
@@ -824,6 +849,16 @@ display: block;
     .partner-img{
         padding: 10px;
     }
+
+
+   
+    /* price */
+
+    #price{
+      
+        
+    }
+    
 
 
     /* mpartner */
